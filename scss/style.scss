@@ -1,0 +1,289 @@
+@import "variable.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+
+$nunito: 'Nunito', sans-serif; 
+$lato: 'Lato', sans-serif;
+$opensans: 'Open Sans', sans-serif;
+$greatvibes: 'Great Vibes', cursive;
+$playfair: 'Playfair Display', serif;
+
+body {
+  font-family: $nunito;
+  background: white !important;
+  position: relative;
+}
+
+// Navigasi
+.navbar-fixed-top.scrolled {
+  background-color: rgba($color: #000000, $alpha: .8) !important;
+  transition: background-color 500ms linear;
+  padding: 0rem 1rem;
+}
+
+.navbar-fixed-top.scrolled #logo {
+  width: 60px;
+}
+.navbar {
+  padding: 1rem;
+  // background: linear-gradient(to bottom right, #ffffff 50%, #ffffcc 100%);
+  h1 {
+    font-family: $opensans;
+    color: $warning;
+  }
+  .navbar-toggler {
+    border: 0;
+    outline:none;
+    color: $indigo !important;
+  }
+  .navbar-nav{
+  
+    .nav-item{
+  
+      a {
+        margin-left: 12px;
+        border: 2px solid transparent;
+        font-family: $lato;
+        color: white;
+        transition: all 300ms linear;
+        &:hover {
+          color: #f6e995 !important;
+        }
+        &.active{
+          color: #f6e995 !important;
+          font-weight: 400 !important;
+          border-bottom: 2px solid $gold;
+          background: none;
+        }
+      }
+      .menu-contact{
+        background-color: $warning;
+        color: white !important;
+        border-radius: 25px;
+        font-weight: 400 !important;
+        &:hover {
+          border-radius: 25px;
+          border: 2px solid $warning;
+          background-color: $indigo;
+          color: $warning !important;
+
+        }
+        &.active {
+          background-color: $indigo;
+          border-radius: 25px;
+          border: 2px solid $warning;
+        }
+      }
+    } 
+  }
+}
+// Carousel
+.carousel-item {
+  height: 625px;
+  img {
+    height: 625px;
+
+  }
+  .carousel-caption {
+    font-family: $playfair;
+    h1{
+      font-size:50pt;
+      font-weight: 400;
+      color: $white !important;
+      text-shadow: 3px 3px 5px black;
+      
+    }
+    p {
+      
+      text-shadow: 3px 3px 5px black;
+    }
+  }
+}
+
+.line{
+  font-size: 30px;
+  color: $gray-800 !important;
+  background: -webkit-linear-gradient(#979193 0%, #29262b 100%);
+  // text-shadow: 2px 2px #797474;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.label-section {
+  font-size: 25pt;
+  color: $warning !important;
+  font-family: $greatvibes !important;
+  background: -webkit-linear-gradient(#ef8506 0%, #693a00 100%);
+  // text-shadow: 2px 2px 5px $gray-200;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-head{
+  font-family: $opensans;
+  font-size: 56px;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px $gray-600;
+  color: $indigo !important;
+  
+}
+.location-head{
+  font-family: $lato;
+  font-weight: 700;
+  color: $indigo !important;
+  
+}
+
+#services {
+  background: linear-gradient(to bottom right, #f0eff3 0%, #f8d8dd 100%);
+
+  .services-item {
+    .card {
+      height: 280px;
+      overflow: hidden;
+      position: relative;
+      transition: all .8s;
+      background: url('../img/img1.jpg');
+      background-position: center center;
+      background-size: cover;
+      &::before { 
+        content:"";
+        position:absolute; top:0;right:0;bottom:0;left:0;
+        background:inherit;
+        transition:inherit;
+      }
+      &:hover::before { 
+        transform: scale(1.2) rotate(3deg);
+      }
+      .card-body{
+        div {
+          h3{
+            font-family: $opensans;
+            font-weight: 700;
+            color: $white;
+          }
+        }
+
+      }
+
+    }
+  }
+}
+
+#kursus {
+  #kursus_salon {
+    .card {
+      height: 280px;
+      overflow: hidden;
+      position: relative;
+      transition: all .8s;
+      background: rgb(255, 247, 242);
+      background-position: center center;
+      background-size: cover;
+      &::before { 
+        content:"";
+        position:absolute; top:0;right:0;bottom:0;left:0;
+        background:inherit;
+        transition:inherit;
+      }
+      &:hover::before { 
+        transform: scale(1.2) rotate(3deg);
+      }
+      .card-body{
+        div {
+          h1{
+            font-family: $opensans;
+            font-weight: 700;
+            color: #432716;
+          }
+          a {
+            font-family: $opensans;
+            border: 1px solid #432716;
+            color: #432716;
+            &:hover {
+              background: #432716;
+              color: white;
+            }
+          }
+        }
+
+      }
+
+    }
+  }
+  .kursus-sulam {
+    .card {
+      height: 280px;
+      overflow: hidden;
+      position: relative;
+      transition: all .8s;
+      background: url('../img/img1.jpg');
+      background-position: center center;
+      background-size: cover;
+      &::before { 
+        content:"";
+        position:absolute; top:0;right:0;bottom:0;left:0;
+        background:inherit;
+        transition:inherit;
+      }
+      &:hover::before { 
+        transform: scale(1.2) rotate(3deg);
+      }
+      .card-body{
+        div {
+          h1{
+            font-family: $opensans;
+            font-weight: 700;
+            color: $white;
+          }
+          a {
+            font-family: $opensans;
+            border: 1px solid #b69e59;
+            color: white;
+            &:hover {
+              background: #b69e59;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+#galery {
+  .galery-item {
+    background-image: url('/img/img1.jpg');
+    background-size: cover;
+    height: 250px;
+  }
+  .galery-caption{
+    color: $gold;
+    margin: 36px 18px;
+    border-color: $gold !important;
+    h4 {
+      font-weight: 800;
+      font-family: $playfair;
+      text-shadow: 2px 2px 5px black;;
+    }
+  }
+  
+}
+
+#contact {
+  min-height: 300px;
+  background: black;
+  background-image: url('../img/lilies-dark.jpg');
+  background-position: center center;
+  background-size: cover;
+  .section-head {
+    color: $white !important;
+  }
+}
