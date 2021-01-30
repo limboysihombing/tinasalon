@@ -106,6 +106,31 @@ body {
     }
   }
 }
+@media (max-width: 576px) { 
+  .navbar{
+    padding: 0rem 1rem;
+  }
+  .navbar-fixed-top #logo {
+    width: 50px;
+  }
+  .navbar-fixed-top.scrolled #logo {
+    width: 50px;
+  }
+  .menu-contact{
+    margin-bottom: 10px !important;
+  }
+  .navbar-fixed-top {
+    background-color: rgba($color: #000000, $alpha: .8) !important;
+    transition: background-color 500ms linear;
+  }
+  
+  .carousel-item {
+    height: 255px !important;
+    img {
+      height: 255px !important;
+    }
+  }
+}
 
 .line{
   font-size: 30px;
@@ -143,7 +168,13 @@ body {
 
 #services {
   background: linear-gradient(to bottom right, #f0eff3 0%, #f8d8dd 100%);
-
+  .card:hover {
+    transition: all 500ms;
+    border-color: $indigo !important;
+  }
+  .card:left {
+    transition: all 500ms;
+  }
   .services-item {
     .card {
       height: 280px;
@@ -279,10 +310,12 @@ body {
 
 #contact {
   min-height: 300px;
-  background: black;
-  background-image: url('../img/lilies-dark.jpg');
-  background-position: center center;
-  background-size: cover;
+  .card {
+    background-image: url('../img/lilies-dark.jpg');
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px !important;
+  }
   .section-head {
     color: $white !important;
   }
