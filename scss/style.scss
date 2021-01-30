@@ -139,14 +139,13 @@ body {
   // text-shadow: 2px 2px #797474;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 .label-section {
   font-size: 25pt;
   color: $warning !important;
   font-family: $greatvibes !important;
   background: -webkit-linear-gradient(#ef8506 0%, #693a00 100%);
-  // text-shadow: 2px 2px 5px $gray-200;
+  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -156,14 +155,13 @@ body {
   font-size: 56px;
   font-weight: 700;
   text-shadow: 2px 2px 5px $gray-600;
-  color: $indigo !important;
-  
+  color: $indigo !important; 
 }
+
 .location-head{
   font-family: $lato;
   font-weight: 700;
   color: $indigo !important;
-  
 }
 
 #services {
@@ -171,6 +169,7 @@ body {
   .card:hover {
     transition: all 500ms;
     border-color: $indigo !important;
+    box-shadow: 0 1rem 3rem rgba(24, 24, 24, 0.175) !important;
   }
   .card:left {
     transition: all 500ms;
@@ -209,6 +208,9 @@ body {
 }
 
 #kursus {
+  .card:hover {
+    box-shadow: 0 0.125rem 0.25rem rgba(24, 24, 24, 0.075) !important;
+  }
   #kursus_salon {
     .card {
       height: 280px;
@@ -286,6 +288,7 @@ body {
       }
 
     }
+    
   }
 }
 

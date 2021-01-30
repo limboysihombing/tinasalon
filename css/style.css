@@ -10049,6 +10049,7 @@ body {
 #services .card:hover {
   transition: all 500ms;
   border-color: #24385a !important;
+  box-shadow: 0 1rem 3rem rgba(24, 24, 24, 0.175) !important;
 }
 #services .card:left {
   transition: all 500ms;
@@ -10081,6 +10082,9 @@ body {
   color: #ffff;
 }
 
+#kursus .card:hover {
+  box-shadow: 0 0.125rem 0.25rem rgba(24, 24, 24, 0.075) !important;
+}
 #kursus #kursus_salon .card {
   height: 280px;
   background: #fff7f2;
