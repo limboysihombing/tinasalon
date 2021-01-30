@@ -212,10 +212,10 @@ body {
   #kursus_salon {
     .card {
       height: 280px;
-      overflow: hidden;
-      position: relative;
-      transition: all .8s;
       background: rgb(255, 247, 242);
+      position: relative;
+      overflow: hidden;
+      transition: all .8s;
       background-position: center center;
       background-size: cover;
       &::before { 
@@ -290,10 +290,31 @@ body {
 }
 
 #galery {
+  #galery_item_1 {background-image: url('/img/img1.jpg');}
+  #galery_item_2 {background-image: url('/img/sulambibir.jpg');}
+  #galery_item_3 {background-image: url('/img/sulameyelinear.jpg');}
+  #galery_item_4 {background-image: url('/img/nailget.jpg');}
+  #galery_item_5 {background-image: url('/img/img1.jpg');}
+  #galery_item_6 {background-image: url('/img/img1.jpg');}
+  #galery_item_7 {background-image: url('/img/img1.jpg');}
+  #galery_item_8 {background-image: url('/img/img1.jpg');}
+
   .galery-item {
-    background-image: url('/img/img1.jpg');
+    overflow: hidden;
+    transition: all .8s;
+    background-position: center center;
     background-size: cover;
+    cursor: pointer;
     height: 250px;
+    &::before { 
+      content:"";
+      position:absolute; top:0;right:0;bottom:0;left:0;
+      background:inherit;
+      transition:inherit;
+    }
+    &:hover::before { 
+      transform: scale(1.2) rotate(3deg);
+    }
   }
   .galery-caption{
     color: $gold;
@@ -319,4 +340,12 @@ body {
   .section-head {
     color: $white !important;
   }
+}
+
+#footer {
+  .nav-link {
+    background: #e8e8e8;
+    padding: 0.5rem 0.8rem !important;
+  }
+
 }

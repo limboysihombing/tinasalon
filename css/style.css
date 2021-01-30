@@ -10083,10 +10083,10 @@ body {
 
 #kursus #kursus_salon .card {
   height: 280px;
-  overflow: hidden;
-  position: relative;
-  transition: all 0.8s;
   background: #fff7f2;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.8s;
   background-position: center center;
   background-size: cover;
 }
@@ -10153,10 +10153,50 @@ body {
   background: #b69e59;
 }
 
-#galery .galery-item {
+#galery #galery_item_1 {
   background-image: url("/img/img1.jpg");
+}
+#galery #galery_item_2 {
+  background-image: url("/img/sulambibir.jpg");
+}
+#galery #galery_item_3 {
+  background-image: url("/img/sulameyelinear.jpg");
+}
+#galery #galery_item_4 {
+  background-image: url("/img/nailget.jpg");
+}
+#galery #galery_item_5 {
+  background-image: url("/img/img1.jpg");
+}
+#galery #galery_item_6 {
+  background-image: url("/img/img1.jpg");
+}
+#galery #galery_item_7 {
+  background-image: url("/img/img1.jpg");
+}
+#galery #galery_item_8 {
+  background-image: url("/img/img1.jpg");
+}
+#galery .galery-item {
+  overflow: hidden;
+  transition: all 0.8s;
+  background-position: center center;
   background-size: cover;
+  cursor: pointer;
   height: 250px;
+}
+#galery .galery-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  transition: inherit;
+}
+#galery .galery-item:hover::before {
+  transform: scale(1.2) rotate(3deg);
 }
 #galery .galery-caption {
   color: #d2a671;
@@ -10180,6 +10220,11 @@ body {
 }
 #contact .section-head {
   color: #ffff !important;
+}
+
+#footer .nav-link {
+  background: #e8e8e8;
+  padding: 0.5rem 0.8rem !important;
 }
 
 /*# sourceMappingURL=style.css.map */
